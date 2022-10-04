@@ -11,6 +11,10 @@ You can run this script in the command line using:
 ```
 python3 run_game.py
 ```
+Or, if you only have 1 version of python installed, you can use:
+```
+python run_game.py
+```
 
 ### Screenshots:
 ![image](https://user-images.githubusercontent.com/40739709/193756863-e83bfc00-f52f-47b1-9c25-d84cbc695334.png)
