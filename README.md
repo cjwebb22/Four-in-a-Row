@@ -3,9 +3,6 @@
 ### Description:
 This is a Connect 4 command line game. This idea was from the optional assignment for FIT1045 at Monash. All code is my own. Completely redone after learning about classes.
 
-### Status:
-This project is unfinished. I plan on making an AI player and having a solo game option.
-
 ### Setup:
 You need python > 3.5 to run this script.
 
