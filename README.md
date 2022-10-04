@@ -8,9 +8,9 @@ You need python > 3.5 to run this script.
 
 ### How to run:
 You can run this script in the command line using:
-'''
+"""
 python3 run_game.py
-'''
+"""
 
 ### Screenshots:
 ![image](https://user-images.githubusercontent.com/40739709/193756863-e83bfc00-f52f-47b1-9c25-d84cbc695334.png)
