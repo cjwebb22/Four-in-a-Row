@@ -90,20 +90,6 @@ class Board:
             return False
         else:
             return True
-    
-    def remove_from_column(self, column: int) -> bool:
-        """
-        Removes the top token from a column
-
-        Returns a bool representing whether a token was removed.
-        """
-        if not column in range(1, self.columns + 1):
-            return False
-        for row in reversed(self.board):
-            if row[column-1] != "0":
-                row[column-1] = "0"
-                return True
-        return False
                 
 
 
