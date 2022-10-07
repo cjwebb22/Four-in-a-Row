@@ -21,9 +21,9 @@ class Board:
         for row in reversed(self.board): #add each row of board to return_string in reverse
             return_string += "".join(row)
             return_string += "\n"
-        return_string += "-" * len(self.board[0]) #add divider to return_string
+        return_string += "-" * self.columns #add divider to return_string
         return_string += "\n"
-        for i in range(1, len(self.board[0]) + 1): #add column numbers to return_string
+        for i in range(1, self.columns + 1): #add column numbers to return_string
             return_string += str(i)
         return return_string
     
