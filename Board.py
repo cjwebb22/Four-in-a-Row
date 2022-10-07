@@ -6,16 +6,12 @@ class Board:
         """
         Initialising board.
         """
-        self.board = [
-            ["0","0","0","0","0","0","0"],
-            ["0","0","0","0","0","0","0"],
-            ["0","0","0","0","0","0","0"],
-            ["0","0","0","0","0","0","0"],
-            ["0","0","0","0","0","0","0"],
-            ["0","0","0","0","0","0","0"]
-        ]
-        self.rows = len(self.board)
-        self.columns = len(self.board[0])
+        self.rows = 6
+        self.columns = 7
+        row_of_board = ["0"] * self.columns
+        self.board = []
+        for _ in range(self.rows):
+            self.board.append(row_of_board[:])
     
     def __str__(self):
         """
