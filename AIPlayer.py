@@ -26,7 +26,7 @@ def minimax(depth: int, board: Board, player: str, maximiser: bool, column: int)
         return
     if depth <= 0:
         return 0
-    if board.check_winner("1"):
+    elif board.check_winner("1"):
         return -depth
     elif board.check_winner("2"):
         return depth
