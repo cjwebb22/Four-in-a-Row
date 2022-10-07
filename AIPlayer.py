@@ -2,10 +2,9 @@ from Board import Board
 from copy import deepcopy
 from random import choice
 
-def AIChooseColumn(board):
+def AIChooseColumn(depth: int, board: Board) -> str:
     board = deepcopy(board)
     choices = None
-    depth = 5
     for i in range(board.columns):
         if board.board[-1][i] == "0":
             choices = [i + 1]
@@ -50,4 +49,3 @@ def minimax(depth: int, board: Board, player: str, maximiser: bool, column: int)
                 if score == best:
                     break
     return score
-
