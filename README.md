@@ -16,6 +16,5 @@ Or, if you only have 1 version of python installed, you can use:
 python run_game.py
 ```
 
-### Screenshots:
-![image](https://user-images.githubusercontent.com/40739709/193756863-e83bfc00-f52f-47b1-9c25-d84cbc695334.png)
-![image](https://user-images.githubusercontent.com/40739709/193756963-bf86594b-27fa-437f-aa95-2c1fd03ed8aa.png)
+### Screenshot:
+![image](https://user-images.githubusercontent.com/40739709/194636088-6eb6ec07-847c-4e85-a545-fddf10c1e1aa.png)
