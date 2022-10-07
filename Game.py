@@ -11,6 +11,7 @@ class Game:
         """
         self.board = Board()
         self.outcome = None
+        self.depth = None
         self.menu()
     
     def execute_turn(self, player):
@@ -59,7 +60,7 @@ class Game:
         Returns a bool representing whether the game has ended.
         """
         #get input
-        choice = AIChooseColumn(self.board)
+        choice = AIChooseColumn(self.depth, self.board)
         self.board.put_in_column("2", choice)
         print(f"Player 2 put a token in column {choice}")
         print(self.board)
@@ -72,6 +73,7 @@ class Game:
             self.outcome = "Draw"
             return True
         return False
+    
     def multiplayer_game(self):
         """
         Runs a 2 player game of connect 4.
@@ -90,6 +92,13 @@ class Game:
         """
         Runs a solo game with from AIPlayer.
         """
+        while True:
+            try:
+                self.depth = int(input("Please choose a depth > 0 (NOTE: The higher the depth the harder the game. Higher depths take longer to load. It is recommended you don't exceed a depth of 5.): "))
+                assert self.depth > 0
+                break
+            except:
+                print("Invalid input")
         print(self.board)
         #execute turns
         while True:
@@ -99,6 +108,7 @@ class Game:
                 break
         print(self.outcome)
         self.board = Board()
+    
     def print_rules(self):
         """
         Prints the rules of connect 4.
@@ -141,6 +151,3 @@ class Game:
                 print("Goodbye!")
                 break
             
-
-
-
