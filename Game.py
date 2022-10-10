@@ -128,7 +128,7 @@ class Game:
         while True:
             #print out game options
             print("Welcome to Connect-Four!")
-            print("1. Play multiplayercgame")
+            print("1. Play multiplayer game")
             print("2. Play solo game")
             print("3. Display rules")
             print("4. Exit")
