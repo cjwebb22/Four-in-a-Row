@@ -1,7 +1,7 @@
 # Connect-4
 
 ### Description:
-This is a Connect 4 command line game. This idea was from the optional assignment for FIT1045 at Monash. All code is my own. Completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
+This is a Connect 4 command line game. This idea was from an optional assignment for FIT1045 at Monash. Essentially, the assignment was to make a command line connect 4 game.  I completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
 
 ### Setup:
 You need python > 3.5 to run this script.
