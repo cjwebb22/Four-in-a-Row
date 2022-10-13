@@ -59,7 +59,7 @@ class Game:
         """
         #get input
         choice = self.AIPlayer.ChooseColumn(self.depth, self.board)
-        self.board.put_in_column("2", choice)
+        self.board.put_in_column(self.AIPlayer.number, choice)
         print(f"Player {self.AIPlayer.number} put a token in column {choice}")
         print(self.board)
         #check if winner
