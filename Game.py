@@ -60,11 +60,11 @@ class Game:
         #get input
         choice = self.AIPlayer.ChooseColumn(self.depth, self.board)
         self.board.put_in_column("2", choice)
-        print(f"Player 2 put a token in column {choice}")
+        print(f"Player {self.AIPlayer.number} put a token in column {choice}")
         print(self.board)
         #check if winner
-        if self.board.check_winner("2"):
-            self.outcome = f"Player 2 wins!"
+        if self.board.check_winner(self.AIPlayer.number):
+            self.outcome = f"Player {self.AIPlayer.number} wins!"
             return True
         #chec if draw
         elif self.board.is_full():
@@ -98,13 +98,33 @@ class Game:
                 break
             except ValueError or AssertionError:
                 print("Invalid input")
+        #get whether first player
+        while True:
+            input_string = input("Do you want to be the first player? Input 'yes' or 'no': ")
+            if input_string.lower() == 'yes':
+                self.AIPlayer.number == "2"
+                is_first_player = True
+                break
+            elif input_string.lower() == 'no':
+                self.AIPlayer.number = "1"
+                is_first_player = False
+                break
+            else:
+                print("Invalid input")
         print(self.board)
         #execute turns
-        while True:
-            if self.execute_turn("1"):
-                break
-            if self.execute_AI_turn():
-                break
+        if is_first_player:
+            while True:
+                if self.execute_turn("1"):
+                    break
+                if self.execute_AI_turn():
+                    break
+        else:
+            while True:
+                if self.execute_AI_turn():
+                    break
+                if self.execute_turn("2"):
+                    break
         print(self.outcome)
         self.board = Board()
     
