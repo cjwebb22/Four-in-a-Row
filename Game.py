@@ -66,7 +66,7 @@ class Game:
         if self.board.check_winner(self.AIPlayer.number):
             self.outcome = f"Player {self.AIPlayer.number} wins!"
             return True
-        #chec if draw
+        #check if draw
         elif self.board.is_full():
             self.outcome = "Draw"
             return True
