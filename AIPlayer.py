@@ -6,7 +6,6 @@ class AIPlayer:
     
     def __init__(self):
         self.number = "2"
-        self.name = "Player 2"
     
     def ChooseColumn(self, depth: int, board: Board) -> int:
         choices = None
