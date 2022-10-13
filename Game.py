@@ -95,10 +95,10 @@ class Game:
         #get depth
         while True:
             try:
-                self.depth = int(input("Please choose a depth > 0 (NOTE: The higher the depth the harder the game. Higher depths take longer to load. It is recommended you don't exceed a depth of 5.): "))
-                assert self.depth > 0
+                self.depth = 1 + int(input("Please choose a difficulty from 1-4, with 1 being the easiest: "))
+                assert self.depth in range(2,6)
                 break
-            except:
+            except ValueError or AssertionError:
                 print("Invalid input")
         print(self.board)
         #execute turns
