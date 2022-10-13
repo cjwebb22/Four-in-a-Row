@@ -1,5 +1,5 @@
 from Board import Board
-from AIPlayer import AIChooseColumn
+from AIPlayer import AIPlayer
     
 class Game:
     """
@@ -12,15 +12,14 @@ class Game:
         self.board = Board()
         self.outcome = None
         self.depth = None
+        self.AIPlayer = AIPlayer()
         self.menu()
     
     def execute_turn(self, player):
         """
         Executes a turn.
-
         Arguments:
         - player : a string representing player playing
-
         Returns a boolean representing whether the game has ended.
         """
         #get input
@@ -56,11 +55,10 @@ class Game:
     def execute_AI_turn(self) -> bool:
         """
         Executes an AI player turn. The AI player is always player 2.
-
         Returns a bool representing whether the game has ended.
         """
         #get input
-        choice = AIChooseColumn(self.depth, self.board)
+        choice = self.AIPlayer.ChooseColumn(self.depth, self.board)
         self.board.put_in_column("2", choice)
         print(f"Player 2 put a token in column {choice}")
         print(self.board)
@@ -151,4 +149,3 @@ class Game:
             else:
                 print("Goodbye!")
                 break
-            
