@@ -17,4 +17,4 @@ python run_game.py
 ```
 
 ### Screenshot:
-![image](https://user-images.githubusercontent.com/40739709/194858867-bfae6d97-0903-4632-9417-5becce23750f.png)
+![image](https://user-images.githubusercontent.com/40739709/195546693-1bc120e9-162b-4baa-9458-e345d90ca0f8.png)
