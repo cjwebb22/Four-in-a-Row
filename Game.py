@@ -74,7 +74,7 @@ class Game:
     
     def multiplayer_game(self):
         """
-        Runs a 2 player game of connect 4.
+        Runs a 2 player game of four in a row.
         """
         print(self.board)
         #execute turns
@@ -88,7 +88,7 @@ class Game:
     
     def solo_game(self):
         """
-        Runs a solo game with from AIPlayer.
+        Runs a solo game with an AI player.
         """
         #get depth
         while True:
@@ -130,10 +130,10 @@ class Game:
     
     def print_rules(self):
         """
-        Prints the rules of connect 4.
+        Prints the rules of four in a row.
         """
         #print out rules
-        print("Connect 4 has pretty simple rules.")
+        print("Four in a Row has pretty simple rules.")
         print("Each player enters a column number 1-7 to place a token in that column.")
         print("The first player with 4 tokens in a row (horizontally, vertically or diagonally) wins!")
         print("If the board is full and no player has won it's a draw.")
@@ -145,7 +145,7 @@ class Game:
         """
         while True:
             #print out game options
-            print("Welcome to Connect-Four!")
+            print("Welcome to Four in a Row!")
             print("1. Play multiplayer game")
             print("2. Play solo game")
             print("3. Display rules")
