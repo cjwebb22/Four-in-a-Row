@@ -1,7 +1,7 @@
-# Connect-4
+# Four in a Row
 
 ### Description:
-This is a Connect 4 command line game. This idea was from an optional assignment for FIT1045 at Monash. Essentially, the assignment was to make a command line connect 4 game.  I completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
+This is a four in a row command line game. This idea was from an optional assignment for FIT1045 at Monash. Essentially, the assignment was to make a command line four in a row game.  I completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
 
 ### Setup:
 You need python > 3.5 to run this script.
@@ -17,4 +17,4 @@ python run_game.py
 ```
 
 ### Screenshot:
-![image](https://user-images.githubusercontent.com/40739709/195593855-579c0c81-9047-416c-becb-37da51af3a66.png)
+![image](https://user-images.githubusercontent.com/40739709/195967710-cf7ab9f4-92dc-4e9b-aa2c-077befbb526b.png)
