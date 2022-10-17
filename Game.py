@@ -12,7 +12,7 @@ class Game:
         self.board = Board()
         self.outcome = None
         self.depth = None
-        self.AIPlayer = AIPlayer()
+        self.AI_player = AIPlayer()
         self.menu()
     
     def execute_turn(self, player):
@@ -58,13 +58,13 @@ class Game:
         Returns a bool representing whether the game has ended.
         """
         #get input
-        choice = self.AIPlayer.ChooseColumn(self.depth, self.board)
-        self.board.put_in_column(self.AIPlayer.number, choice)
-        print(f"Player {self.AIPlayer.number} put a token in column {choice}")
+        choice = self.AI_player.ChooseColumn(self.depth, self.board)
+        self.board.put_in_column(self.AI_player.number, choice)
+        print(f"Player {self.AI_player.number} put a token in column {choice}")
         print(self.board)
         #check if winner
-        if self.board.check_winner(self.AIPlayer.number):
-            self.outcome = f"Player {self.AIPlayer.number} wins!"
+        if self.board.check_winner(self.AI_player.number):
+            self.outcome = f"Player {self.AI_player.number} wins!"
             return True
         #check if draw
         elif self.board.is_full():
@@ -102,11 +102,11 @@ class Game:
         while True:
             input_string = input("Do you want to be the first player? Input 'yes' or 'no': ")
             if input_string.lower() == 'yes':
-                self.AIPlayer.number == "2"
+                self.AI_player.number == "2"
                 is_first_player = True
                 break
             elif input_string.lower() == 'no':
-                self.AIPlayer.number = "1"
+                self.AI_player.number = "1"
                 is_first_player = False
                 break
             else:
