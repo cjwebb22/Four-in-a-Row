@@ -1,7 +1,7 @@
 # Four in a Row
 
 ### Description:
-This is a four in a row command line game. This idea was from an optional assignment for FIT1045 at Monash. Essentially, the assignment was to make a command line four-in-a-row game.  I completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
+This is a four-in-a-row command line game. This idea was from an optional assignment for FIT1045 at Monash. Essentially, the assignment was to make a command line four-in-a-row game.  I completely redid the code after learning about classes. Then I added a solo game using an AI player that used a minimax algorithm.
 
 ### Setup:
 You need python > 3.5 to run this script.
