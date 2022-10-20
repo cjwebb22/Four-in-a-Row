@@ -106,7 +106,7 @@ class Game:
                 is_first_player = True
                 break
             elif input_string.lower() == 'no':
-                self.ai_player_.number = "1"
+                self.ai_player.number = "1"
                 is_first_player = False
                 break
             else:
